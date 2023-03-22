@@ -15,25 +15,27 @@ public class App {
         System.out.println("Digite Outro Numero: ");
         double n2 = teclado.nextDouble();
 
-        switch (op) {
+        teclado.close();
+        
+         switch (op) {
             case '+':
                 resultado = n1 + n2;
-                System.out.println("O Resultado da soma é: " + resultado);
+                System.out.println("O Resultado de " + n1 + " + " + n2 + " é = " + resultado);
                 break;
 
             case '-':
                 resultado = n1 - n2;
-                System.out.println("O Resultado da Subtração é: " + resultado);
+                System.out.println("O Resultado de " + n1 + " - " + n2 + " é = " + resultado);
                 break;
 
             case '*':
                 resultado = n1 * n2;
-                System.out.println("O Resultado da Multiplicação é: " + resultado);
+                System.out.println("O Resultado de " + n1 + " * " + n2 + " é = " + resultado);
                 break;
 
             case '/':
                 resultado = n1 / n2;
-                System.out.println("O Resultado da Divisão é: " + resultado);
+                System.out.println("O Resultado de " + n1 + " / " + n2 + " é = " + resultado);
                 break;
             default:
                 System.out.println("Operador Não Existe!!");
